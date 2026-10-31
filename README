@@ -1,0 +1,45 @@
+🎮 Jokenpô - Pedra, Papel e Tesoura
+
+Um jogo clássico de Pedra, Papel e Tesoura, desenvolvido em Python para ser executado diretamente no terminal.
+
+O projeto permite jogar contra o computador (CPU), que realiza suas escolhas aleatoriamente.
+
+📌 Funcionalidades
+🎮 Menu inicial interativo.
+👤 Modo Jogador 1 vs CPU.
+🤖 Escolhas aleatórias do computador.
+✊ Pedra, papel e tesoura como opções de jogada.
+🏆 Identificação automática do vencedor ou empate.
+🔄 Opção para jogar novamente.
+🏠 Opção para voltar ao menu inicial.
+🚪 Opção para encerrar o jogo.
+⚠️ Validação das escolhas do jogador.
+🛠️ Tecnologias utilizadas
+
+O projeto foi desenvolvido utilizando:
+
+Python 3
+random — para gerar escolhas aleatórias do computador.
+time — para adicionar pausas e simular o pensamento da CPU.
+sys — para encerrar a execução do programa.
+▶️ Como executar
+
+Certifique-se de ter o Python 3 instalado em sua máquina e execute o programa diretamente pelo terminal.
+
+bash
+python main.py
+
+
+Observação: substitua main.py pelo nome do arquivo, caso seja diferente.
+
+🎯 Objetivo do projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais da programação em Python, como:
+
+Estruturas de repetição (while).
+Estruturas condicionais (if, elif e else).
+Tratamento de exceções (try e except).
+Entrada e saída de dados (input e print).
+Utilização de módulos nativos.
+Manipulação de strings.
+Lógica de programação.
