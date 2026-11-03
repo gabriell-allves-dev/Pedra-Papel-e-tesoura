@@ -1,0 +1,93 @@
+# Arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Extensões compiladas
+*.so
+
+# ==============================
+# Ambientes virtuais
+# ==============================
+
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================
+# Variáveis de ambiente e secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Distribuição e build
+# ==============================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ==============================
+# Testes e cobertura
+# ==============================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ==============================
+# Linters e ferramentas
+# ==============================
+
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+
+# ==============================
+# Editores e IDEs
+# ==============================
+
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+
+# ==============================
+# Sistema operacional
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Bancos de dados locais
+# ==============================
+
+*.sqlite3-journal

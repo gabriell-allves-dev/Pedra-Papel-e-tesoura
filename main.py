@@ -13,7 +13,7 @@ while True:
         print('='*6 + ' JOKENPÔ ' + '='*6)
 
         print()
-
+ 
         print('[1] - Jogador 1 vs CPU')
         print('[2] - Jogador 1 vs Jogador 2')
 
