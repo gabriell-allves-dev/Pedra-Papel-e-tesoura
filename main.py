@@ -6,6 +6,7 @@ n1 = 'pedra'
 n2 = 'papel'
 n3 = 'tesoura'
 
+
 escolhas = (n1, n2, n3)
 
 while True:
@@ -112,3 +113,5 @@ while True:
         print('Valor errado!')
 
         print()
+
+        
