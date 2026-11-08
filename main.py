@@ -6,6 +6,9 @@ n1 = 'pedra'
 n2 = 'papel'
 n3 = 'tesoura'
 
+green = '\033[1;32m'
+
+print(f'{green}')
 
 escolhas = (n1, n2, n3)
 
