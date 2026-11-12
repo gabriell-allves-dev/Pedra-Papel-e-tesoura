@@ -2,9 +2,9 @@ import time
 import random
 import sys
 
-n1 = 'pedra'
-n2 = 'papel'
-n3 = 'tesoura'
+n1 = 'Pedra'
+n2 = 'Papel'
+n3 = 'Tesoura'
 
 green = '\033[1;32m'
 
@@ -109,12 +109,84 @@ while True:
                 print('Opção inválida!')
 
     elif opcao == 2:
-        print('Em produção...')
-        print
+        jogador_1 = input('Jogador 1: ')
+        jogador_2 = input('Jogador 2: ')
+
+        print()
+
+        while True:
+            time.sleep(1)
+            print('Espere um pouco...')
+            print()
+
+            print('Jogador 1')
+            print()
+            print('Agora é a sua vez!')
+
+            n4 = input('Escolha (Pedra - Papel - Tesoura): ').strip().capitalize()
+            print()
+
+            print('Jogador 2')
+            print('Agora é a sua vez!')
+
+            n5 = input('Escolha (Pedra - Papel - Tesoura): ').strip().capitalize()
+
+            if n4 not in escolhas or n5 not in escolhas:
+                print('Escolha inválida!')
+                print()
+                continue
+
+            time.sleep(1.5)
+
+            print()
+
+            print('='*20)
+            print(f'{jogador_1} escolheu: {n4}')
+            print('='*20)
+
+            time.sleep(1.5)
+            print()
+
+            print('='*20)
+            print(f'{jogador_2} escolheu: {n5}')
+            print('='*20)
+
+            print()
+
+            if n5 == n4:
+                print('Empate!')
+                time.sleep(3)
+
+                print()
+
+            elif n5 == n1 and n4 == n2 or n5 == n2 and n4 == n3 or n5 == n3 and n4 == n1:
+                print(f'{jogador_1} ganhou')
+
+            else:
+                print(f'{jogador_2} ganhou!')
+
+            print('='*20)
+            print('[1] - Jogar novamente')
+            print('[2] - Voltar ao início')
+            print('[3] - Sair')
+            print('='*20)
+
+            print()
+
+            opcao = input('Escolher opção: ')
+
+            print()
+
+            if opcao == '1':
+                pass
+            elif opcao == '2':
+                break
+            elif opcao == '3':
+                sys.exit()
+            else:
+                print('Opção inválida!')
 
     else:
         print('Valor errado!')
 
         print()
-
-        
