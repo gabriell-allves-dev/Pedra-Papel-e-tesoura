@@ -2,6 +2,9 @@ import time
 import random
 import sys
 
+def caixa():
+    print('='*20)
+
 n1 = 'Pedra'
 n2 = 'Papel'
 n3 = 'Tesoura'
@@ -25,6 +28,7 @@ while True:
 
         try:
             opcao = int(input('Alternativa: '))
+            caixa()
 
             print()
 
@@ -36,25 +40,30 @@ while True:
             print()
 
     if opcao == 1:
-
+        caixa()
         jogador_1 = input('Digite seu nome: ')
+        caixa()
 
         print()
 
         while True:
-            time.sleep(1)
-            print('Espere um pouco...')
             time.sleep(1.5)
+            caixa()
+            print('Espere um pouco...')
+            time.sleep(2)
             print('Computador pensando...')
-            time.sleep(2.5)
-            n4 = random.choice(escolhas)
-
+            caixa()
+            time.sleep(2)
             print()
 
-            n5 = input('Escolha (Pedra - Papel - Tesoura): ').strip().lower()
+            n4 = random.choice(escolhas)
+
+            caixa()
+            n5 = input(f'{jogador_1} escolha: (Pedra - Papel - Tesoura): ').strip().capitalize()
+            caixa()
 
             if n5 not in escolhas:
-                print('Escolha inválida!')
+                print('\033[1;31m' + 'Escolha inválida!' + '\033[1;32m')
                 print()
                 continue
 
@@ -62,40 +71,50 @@ while True:
 
             print()
 
-            print('='*20)
+            caixa()
             print(f'{jogador_1} escolheu: {n5}')
-            print('='*20)
-
-            time.sleep(1.5)
+            caixa()
             print()
 
-            print('='*20)
+            time.sleep(3)
+
+            caixa()
             print(f'Computador escolheu: {n4}')
-            print('='*20)
+            caixa()
 
             print()
 
             if n5 == n4:
+                caixa()
                 print('Empate!')
-                time.sleep(3)
-
-                print()
+                caixa()
 
             elif n5 == n1 and n4 == n2 or n5 == n2 and n4 == n3 or n5 == n3 and n4 == n1:
+                caixa()
                 print('CPU ganhou')
+                caixa()
 
             else:
+                caixa()
                 print(f'{jogador_1} ganhou!')
+                caixa()
 
-            print('='*20)
+            print()
+            time.sleep(3)
+            caixa()
             print('[1] - Jogar novamente')
+            time.sleep(1.5)
             print('[2] - Voltar ao início')
+            time.sleep(1.5)
             print('[3] - Sair')
-            print('='*20)
+            time.sleep(1.5)
+            caixa()
 
             print()
 
+            caixa()
             opcao = input('Escolher opção: ')
+            caixa()
 
             print()
 
@@ -104,6 +123,16 @@ while True:
             elif opcao == '2':
                 break
             elif opcao == '3':
+                caixa()
+                print('Finalizando programa...')
+                time.sleep(1.5)
+                print('3')
+                time.sleep(1.5)
+                print('2')
+                time.sleep(1.5)
+                print('1')
+                time.sleep(1.5)
+                print('\033[1;31m' + 'PROGRAMA FINALIZADO!' + '\033[1;32m')
                 sys.exit()
             else:
                 print('Opção inválida!')
